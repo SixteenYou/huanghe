@@ -63,7 +63,6 @@ char ui(double a, int b, int c,int count)
 }
 void ui_yaoqing(double a, int b, int c, int count,int d)
 {
-	char tmp;
 	system("cls");
 	printf("你现在已经获得%0.2f元\n", a);
 	if (b)
@@ -269,7 +268,7 @@ void choujiang1(double a)
 				printf("你获得了9个钻石碎片\n");
 				printf("还差最后1个钻石碎片就能提现了，加油，100个钻石碎片可以兑换1个钻石\n");
 				Sleep(1000);
-				zuanshi += 9;
+				suipian += 9;
 				break;
 			}
 		}
@@ -282,7 +281,7 @@ void choujiang1(double a)
 		}
 		Sleep(2000);
 	}
-	yaoqinghaoyou(a,99,count,99,friend_f);
+	yaoqinghaoyou(a,zuanshi,count,suipian,friend_f);
 }
 void start()
 {
@@ -322,7 +321,7 @@ int main()
 				else if (a == 'n' || a == 'N')
 					start();
 			}
-		}else if(a=='Y',a=='y')
+		}else if(a=='Y'||a=='y')
 			start();
 	}
 	return 0;
