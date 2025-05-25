@@ -4,6 +4,14 @@
 #include<stdlib.h>
 #include<time.h>
 void choujiang1(double a);
+void start();
+void yaoqinghaoyou(double a, int zuanshi, int count, int suipian, int friend_f);
+void huojiang(double a, int zuanshi, int suipian, int count, int friend_f);
+int tixian();
+int yaoqing();
+void ui_yaoqing(double a, int b, int c, int count, int d);
+char ui(double a, int b, int c, int count);
+void choujiang();
 char input()
 {
 	Sleep(300);
